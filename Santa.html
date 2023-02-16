@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Santa.css">
+        <title>Santa Denier Detector</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Santa Denier Detector</h1>    
+        </div>
+        <br>
+        <div class="elementCenter">
+            <div class="textCenter">
+                <h2>Is this person a Santa Believer or a Santa Denier?<h2/>
+                <!--Rickroll for the non-believers!-->
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><I>I don't believe in Santa!</I></a></p>
+                <button class="button retrieve" onclick="getNewImage()">Reterive Data from FBI Database</button>
+            </div>
+            <aside>
+                <!--The link below is Santa, the actual image will not appear until the user presses the button.-->
+                <img 
+                    class="img" 
+                    id="PersonImage" 
+                    src="https://media.istockphoto.com/id/892363022/vector/vector-cartoon-illustration-of-cute-traditional-santa-claus-character-swinging-on-a-string-of.jpg?s=612x612&w=0&k=20&c=USO-3Dd7LG4a6ehnjnGE2LRM9MJ3NhAFlEUF4giVRGo=" 
+                    alt="The Person's Image" 
+                    width="300" 
+                    height="200">
+            </aside>
+        </div>
+        <img 
+            class="img" 
+            style="display:none;" 
+            id="loader" 
+            src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" 
+            alt="Loading..." 
+            width="60" 
+            height="60">    
+        <div class="textCenter" style="display: none;" id="result">
+            <h2>This person is a Santa <span id='type'></span>!</h2>
+        </div>
+        <div class="footer">
+            <!--Disclaimer-->
+            <p>Author: Kelin Zeng <br> Date: 02/06/1983 <br> <i>Accuracy of the results not guaranteed. Results are NOT admissible in court!</i></p>
+        </div>
+
+        <script src="Santa.js"></script>
+    </body>
+</html>
